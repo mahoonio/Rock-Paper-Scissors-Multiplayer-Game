@@ -30,14 +30,7 @@ public class RightHandControler : MonoBehaviour
             hand_animator.SetBool("startWalk", false);
         }
 
-        Debug.Log(hand_animator.GetCurrentAnimatorStateInfo(0).IsTag("bTree"));
-        if (hand_animator.GetCurrentAnimatorStateInfo(0).IsTag("bTree"))
-        {
-
-            
-           
-        }
-
+        
 
     }
 }
