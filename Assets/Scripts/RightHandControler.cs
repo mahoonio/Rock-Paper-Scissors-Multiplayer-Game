@@ -11,8 +11,7 @@ public class RightHandControler : MonoBehaviour
     [SerializeField]
     private float degreesPerSecond = 20;
 
-    private Vector3 targetRotation = new Vector3(-5f, -71f, -110f);
-    Vector3 currentEulerAngles;
+
     Animator hand_animator;
     void Start()
     {
