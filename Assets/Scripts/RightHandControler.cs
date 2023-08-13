@@ -8,8 +8,7 @@ public class RightHandControler : MonoBehaviour
     [SerializeField]
     private float speed = 7f;
 
-    [SerializeField]
-    private float degreesPerSecond = 20;
+   
 
 
     Animator hand_animator;

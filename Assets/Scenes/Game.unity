@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &134478290
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 134478291}
+  m_Layer: 0
+  m_Name: ChoiceRotationPivot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &134478291
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 134478290}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -4.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &246517508
 GameObject:
   m_ObjectHideFlags: 0
@@ -132,7 +163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 246517510}
-  - component: {fileID: 246517509}
+  - component: {fileID: 246517511}
   m_Layer: 0
   m_Name: ChoiceControler
   m_TagString: Untagged
@@ -140,22 +171,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &246517509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246517508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59c4c0d9275c68446a37d7f8f1cacdd5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  floatSpeed: 20000
-  rockPrefab: {fileID: 126942841062347443, guid: 1b0230ee5d19a0f4f9555dfc4e58493e, type: 3}
-  scissorPrefab: {fileID: 112151454727345279, guid: 6cfedf354508d3c438052e124c2ac78c, type: 3}
-  paperPrefab: {fileID: 5673562684931968022, guid: 661c68a9c82442b428b5b7c46237ad4a, type: 3}
 --- !u!4 &246517510
 Transform:
   m_ObjectHideFlags: 0
@@ -171,6 +186,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &246517511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246517508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c4c0d9275c68446a37d7f8f1cacdd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 60.1
+  rockPrefab: {fileID: 126942841062347443, guid: 1b0230ee5d19a0f4f9555dfc4e58493e, type: 3}
+  scissorPrefab: {fileID: 5673562684931968022, guid: 661c68a9c82442b428b5b7c46237ad4a, type: 3}
+  paperPrefab: {fileID: 112151454727345279, guid: 6cfedf354508d3c438052e124c2ac78c, type: 3}
+  RotationPivot: {fileID: 134478290}
 --- !u!1 &290070462
 GameObject:
   m_ObjectHideFlags: 0
@@ -822,7 +854,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
-  degreesPerSecond: 20
 --- !u!1 &1724396238
 GameObject:
   m_ObjectHideFlags: 0
